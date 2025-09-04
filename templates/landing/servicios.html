@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Servicios{% endblock %}
+{% block content %}
+<h2 class="page-title">Servicios</h2>
+<ul class="list">
+  {% for p in planes %}
+  <li>
+    <h3>{{ p.titulo }}</h3>
+    <p>{{ p.detalle }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
+

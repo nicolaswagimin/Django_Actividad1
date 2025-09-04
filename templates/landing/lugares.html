@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Lugares Turísticos{% endblock %}
+{% block content %}
+<h2 class="page-title">Lugares Turísticos</h2>
+<div class="grid cards">
+  {% for d in destinos %}
+  <article class="card">
+    <div class="card-body">
+      <h3>{{ d.nombre }}</h3>
+      <p>{{ d.resena }}</p>
+    </div>
+  </article>
+  {% endfor %}
+  </div>
+{% endblock %}
+
+
